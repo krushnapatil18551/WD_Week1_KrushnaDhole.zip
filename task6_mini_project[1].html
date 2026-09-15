@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Learning Hub - Krushna Dhole</title>
+</head>
+<body>
+    <header>
+        <h1>Student Learning Hub</h1>
+        <p><strong>HTML Fundamentals Mini Project</strong> by Krushna Dhole</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#courses">Courses</a> |
+        <a href="#schedule">Schedule</a> |
+        <a href="#register">Register</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About the Learning Hub</h2>
+            <article>
+                <p>Welcome to the <strong>Student Learning Hub</strong>, a simple static website created using only HTML5.</p>
+                <p>HTML is the <em>foundation of web development</em> because it gives webpages their structure and meaning.</p>
+                <img src="https://via.placeholder.com/700x300.png?text=Student+Learning+Hub" alt="Banner representing a student learning hub">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener">Learn more about HTML on MDN</a></p>
+            </article>
+        </section>
+
+        <section id="courses">
+            <h2>Popular Courses</h2>
+            <ul>
+                <li>Web Development
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ol>
+                </li>
+                <li>Programming
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="schedule">
+            <h2>Course Schedule</h2>
+            <table border="1">
+                <caption>Weekly Learning Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML Structure</td>
+                        <td>2 Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Forms and Tables</td>
+                        <td>2 Hours</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Mini Project</td>
+                        <td>3 Hours</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="register">
+            <h2>Student Registration</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="student-name">Name:</label><br>
+                    <input type="text" id="student-name" name="student-name" required>
+                </p>
+                <p>
+                    <label for="student-email">Email:</label><br>
+                    <input type="email" id="student-email" name="student-email" required>
+                </p>
+                <p>
+                    <label for="student-phone">Phone:</label><br>
+                    <input type="tel" id="student-phone" name="student-phone" required>
+                </p>
+                <p>
+                    Gender:
+                    <input type="radio" id="m" name="gender" value="Male" required>
+                    <label for="m">Male</label>
+                    <input type="radio" id="f" name="gender" value="Female">
+                    <label for="f">Female</label>
+                    <input type="radio" id="o" name="gender" value="Other">
+                    <label for="o">Other</label>
+                </p>
+                <p>
+                    <label for="project-course">Course:</label><br>
+                    <select id="project-course" name="course" required>
+                        <option value="">Select a course</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="programming">Programming</option>
+                        <option value="data-science">Data Science</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="checkbox" id="updates" name="updates" value="yes">
+                    <label for="updates">Send me course updates</label>
+                </p>
+                <p>
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Krushna Dhole | Student Learning Hub</p>
+    </footer>
+</body>
+</html>
